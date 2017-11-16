@@ -1,0 +1,132 @@
+html {
+  font-family: "Noto Sans Japanese", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+:not(pre) > code,
+:not(pre) > kbd,
+:not(pre) > samp {
+  font-family: monospace, monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Sans Japanese", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+pre {
+  font-family: monospace, monospace;
+}
+
+main > * {
+  border-bottom: 1px solid #ddd;
+  margin: 15px 0;
+}
+
+.uk-panel-badge {
+  max-width: calc(100% - 10px);
+}
+
+.uk-panel-box .uk-panel-badge {
+  max-width: calc(100% - 30px);
+}
+
+.uk-panel-hover .uk-panel-badge {
+  max-width: calc(100% - 30px);
+}
+
+.uk-panel-space .uk-panel-badge {
+  max-width: calc(100% - 70px);
+}
+
+.uk-margin {
+  margin-top: 15px;
+}
+
+.uk-margin-large {
+  margin-top: 50px;
+}
+
+.uk-margin-small {
+  margin-top: 5px;
+}
+
+.uk-modal {
+  text-align: initial;
+}
+
+.uk-modal-dialog {
+  width: 750px;
+}
+
+.uk-tooltip {
+  max-width: none;
+}
+
+#loading {
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+}
+
+.loader-wrapper {
+  bottom: 50%;
+  position: absolute;
+  right: 50%;
+  transform: translate(50%, 50%);
+}
+
+.loader {
+  animation: 3s ease-in-out infinite loader;
+  background: rgba(205, 73, 118, 0.5);
+  border-radius: 50%;
+  height: 25px;
+  transform-origin: 50% 100%;
+  width: 25px;
+}
+
+.loader::before {
+  background: rgba(41, 165, 221, 0.5);
+  border-radius: 50%;
+  content: "";
+  height: 25px;
+  left: -10.82532px;
+  position: absolute;
+  top: 18.75px;
+  width: 25px;
+}
+
+.loader::after {
+  background: rgba(146, 191, 93, 0.5);
+  border-radius: 50%;
+  content: "";
+  height: 25px;
+  left: 10.82532px;
+  position: absolute;
+  top: 18.75px;
+  width: 25px;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(-720deg);
+  }
+  50% {
+    transform: rotate(720deg);
+  }
+}
+
+.fb_iframe_widget span {
+  vertical-align: middle !important;
+}

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8">
+    <meta name="referrer" content="origin">
+    <meta name="robots" content="noarchive">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HoneyWorks Player</title>
+    <meta name="apple-mobile-web-app-title" content="HW Player">
+    <meta name="application-name" content="HW Player">
+    <meta name="description" content="YouTubeにアップロードされているHoneyWorksのオフィシャル動画をまとめたサイトです。">
+    <meta property="og:title" content="HoneyWorks Player">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://player.honey.works/">
+    <meta property="og:image" content="https://player.honey.works/logo.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <meta property="og:description" content="YouTubeにアップロードされているHoneyWorksのオフィシャル動画をまとめたサイトです。">
+    <link rel="canonical" href="https://player.honey.works/">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://twemoji.maxcdn.com/16x16/1f3a7.png">
+    <link rel="icon" type="image/png" sizes="36x36" href="https://twemoji.maxcdn.com/36x36/1f3a7.png">
+    <link rel="icon" type="image/png" sizes="72x72" href="https://twemoji.maxcdn.com/72x72/1f3a7.png">
+    <link rel="icon" type="image/svg+xml" sizes="any" href="https://twemoji.maxcdn.com/svg/1f3a7.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/uikit.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/css/components/tooltip.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.1/jquery-migrate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ismobilejs/0.4.1/isMobile.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.4/js/components/tooltip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-media.js"></script>
+    <script src="/js/script.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "HoneyWorks Player",
+        "alternateName": "ハニーワークス プレーヤー",
+        "url": "https://player.honey.works/"
+      }
+    </script>
+  </head>
+  <body>
+    <div id="loading">
+      <div class="loader-wrapper">
+        <div class="loader"></div>
+      </div>
+    </div>
+    <div class="uk-container uk-container-center">
+      <header>
+        <div class="uk-margin-large uk-text-center">
+          <h1 class="uk-heading-large uk-link-reset">
+            <a href="/">HoneyWorks Player</a>
+          </h1>
+          <p>
+            <a href="#about" data-uk-modal>このサイトについて</a>
+          </p>
+          <div id="about" class="uk-modal">
+            <div class="uk-modal-dialog">
+              <a class="uk-close uk-modal-close" href="#"></a>
+              <h2>HoneyWorks Player</h2>
+              <p>YouTubeにアップロードされているHoneyWorksのオフィシャル動画をまとめたサイトです。</p>
+              <p class="uk-text-muted">※非公式サイトですが、動画はすべて公式のものです。</p>
+              <p>
+                <a href="https://github.com/yknk/player.honey.works">GitHub - yknk/player.honey.works</a>
+              </p>
+              <h3>オフィシャルチャンネルへのリンク</h3>
+              <ul>
+                <li>
+                  <a href="https://www.youtube.com/HoneyWorks56410">HoneyWorks OFFICIAL</a>
+                  <ul>
+                    <li>
+                      <a href="https://www.youtube.com/HoneyWorks56410/videos">動画</a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/HoneyWorks56410/playlists">再生リスト</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/chicoxxx">CHiCO with HoneyWorks チャンネル</a>
+                  <ul>
+                    <li>
+                      <a href="https://www.youtube.com/chicoxxx/videos">動画</a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/chicoxxx/playlists">再生リスト</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/sonymusicnetwork">Sony Music (Japan)</a>
+                  <ul>
+                    <li>
+                      <a href="https://www.youtube.com/sonymusicnetwork/videos">動画</a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/sonymusicnetwork/search?query=HoneyWorks">検索</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <h3>お問い合わせ</h3>
+              <p data-uk-margin>
+                <a class="uk-button" href="https://www.google.com/recaptcha/mailhide/d?k=01f9G4tWjSVZksiZYZitM2aA==&amp;c=XT8vgIe0cOsF18sWCQLDfW16jJCV_MslxQGGqJ8SM9Y=">
+                  <span class="uk-icon-envelope"></span>
+                  <span style="margin-left: 3px;">メールアドレスを表示</span>
+                </a>
+              </p>
+              <div class="uk-modal-caption">このサイトについて</div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section>
+          <ul class="uk-tab" data-uk-tab="{connect: '#tab-content', swiping: false}">
+            <li class="uk-active">
+              <a href="#">すべて</a>
+            </li>
+            <li>
+              <a href="#">告白実行委員会～恋愛シリーズ～</a>
+            </li>
+            <li>
+              <a href="#">CHiCO with HoneyWorks</a>
+            </li>
+            <li>
+              <a href="#">ボカロ・歌い手</a>
+            </li>
+            <li>
+              <a href="#">歌手・声優</a>
+            </li>
+          </ul>
+          <ul id="tab-content" class="uk-switcher">
+            <li class="uk-active">
+              <script id="youtube-list-template" type="text/x-handlebars-template">
+                <ul class="uk-grid uk-grid-small uk-margin" data-uk-grid-margin>
+                  {{#each youtube}}
+                  <li class="uk-width-1-2 uk-width-small-1-3 uk-width-medium-1-4 uk-width-large-1-5">
+                    <a class="uk-panel uk-panel-box uk-panel-box-secondary uk-panel-hover fancybox" href="https://www.youtube.com/watch?v={{id}}">
+                      <div class="uk-panel-badge uk-badge uk-text-truncate">{{join vocal separator=","}}</div>
+                      <div class="uk-panel-teaser">
+                        <img src="https://i.ytimg.com/vi/{{id}}/mqdefault.jpg" alt="{{title}}">
+                      </div>
+                      <p class="uk-text-truncate">{{title}}</p>
+                    </a>
+                  </li>
+                  {{/each}}
+                </ul>
+              </script>
+              <div id="youtube-list"></div>
+            </li>
+            <li>
+              <script id="youtube-renai-list-template" type="text/x-handlebars-template">
+                <ul class="uk-grid uk-grid-small uk-margin" data-uk-grid-margin>
+                  {{#each youtube}}
+                  {{#ifRenai series}}
+                  <li class="uk-width-1-2 uk-width-small-1-3 uk-width-medium-1-4 uk-width-large-1-5">
+                    <a class="uk-panel uk-panel-box uk-panel-box-secondary uk-panel-hover fancybox" href="https://www.youtube.com/watch?v={{id}}">
+                      <div class="uk-panel-badge uk-badge uk-text-truncate">{{join vocal separator=","}}</div>
+                      <div class="uk-panel-teaser">
+                        <img src="https://i.ytimg.com/vi/{{id}}/mqdefault.jpg" alt="{{title}}">
+                      </div>
+                      <p class="uk-text-truncate">{{title}}</p>
+                    </a>
+                  </li>
+                  {{/ifRenai}}
+                  {{/each}}
+                </ul>
+              </script>
+              <div id="youtube-renai-list"></div>
+            </li>
+            <li>
+              <script id="youtube-cwhw-list-template" type="text/x-handlebars-template">
+                <ul class="uk-grid uk-grid-small uk-margin" data-uk-grid-margin>
+                  {{#each youtube}}
+                  {{#ifCwhw vocal}}
+                  <li class="uk-width-1-2 uk-width-small-1-3 uk-width-medium-1-4 uk-width-large-1-5">
+                    <a class="uk-panel uk-panel-box uk-panel-box-secondary uk-panel-hover fancybox" href="https://www.youtube.com/watch?v={{id}}">
+                      <div class="uk-panel-badge uk-badge uk-text-truncate">{{join vocal separator=","}}</div>
+                      <div class="uk-panel-teaser">
+                        <img src="https://i.ytimg.com/vi/{{id}}/mqdefault.jpg" alt="{{title}}">
+                      </div>
+                      <p class="uk-text-truncate">{{title}}</p>
+                    </a>
+                  </li>
+                  {{/ifCwhw}}
+                  {{/each}}
+                </ul>
+              </script>
+              <div id="youtube-cwhw-list"></div>
+            </li>
+            <li>
+              <script id="youtube-hnwk-list-template" type="text/x-handlebars-template">
+                <ul class="uk-grid uk-grid-small uk-margin" data-uk-grid-margin>
+                  {{#each youtube}}
+                  {{#ifHnwk channel}}
+                  <li class="uk-width-1-2 uk-width-small-1-3 uk-width-medium-1-4 uk-width-large-1-5">
+                    <a class="uk-panel uk-panel-box uk-panel-box-secondary uk-panel-hover fancybox" href="https://www.youtube.com/watch?v={{id}}">
+                      <div class="uk-panel-badge uk-badge uk-text-truncate">{{join vocal separator=","}}</div>
+                      <div class="uk-panel-teaser">
+                        <img src="https://i.ytimg.com/vi/{{id}}/mqdefault.jpg" alt="{{title}}">
+                      </div>
+                      <p class="uk-text-truncate">{{title}}</p>
+                    </a>
+                  </li>
+                  {{/ifHnwk}}
+                  {{/each}}
+                </ul>
+              </script>
+              <div id="youtube-hnwk-list"></div>
+            </li>
+            <li>
+              <script id="youtube-smej-list-template" type="text/x-handlebars-template">
+                <ul class="uk-grid uk-grid-small uk-margin" data-uk-grid-margin>
+                  {{#each youtube}}
+                  {{#ifSmej channel}}
+                  <li class="uk-width-1-2 uk-width-small-1-3 uk-width-medium-1-4 uk-width-large-1-5">
+                    <a class="uk-panel uk-panel-box uk-panel-box-secondary uk-panel-hover fancybox" href="https://www.youtube.com/watch?v={{id}}">
+                      <div class="uk-panel-badge uk-badge uk-text-truncate">{{join vocal separator=","}}</div>
+                      <div class="uk-panel-teaser">
+                        <img src="https://i.ytimg.com/vi/{{id}}/mqdefault.jpg" alt="{{title}}">
+                      </div>
+                      <p class="uk-text-truncate">{{title}}</p>
+                    </a>
+                  </li>
+                  {{/ifSmej}}
+                  {{/each}}
+                </ul>
+              </script>
+              <div id="youtube-smej-list"></div>
+            </li>
+          </ul>
+        </section>
+        <aside>
+          <div class="uk-margin-large uk-text-center" data-uk-margin>
+            <div class="uk-display-inline-block">
+              <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=HoneyWorks%20Player&amp;url=https%3A%2F%2Fplayer.honey.works%2F" data-lang="ja">
+                <button class="uk-button" type="button">
+                  <span class="uk-icon-small uk-icon-twitter" style="color: #1da1f2;"></span>
+                  <span style="margin-left: 3px;">ツイート</span>
+                </button>
+              </a>
+            </div>
+            <div class="uk-display-inline-block fb-share-button" data-href="https://player.honey.works/" data-layout="button">
+              <a class="fb-xfbml-parse-ignore" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fplayer.honey.works%2F">
+                <button class="uk-button" type="button">
+                  <span class="uk-icon-small uk-icon-facebook-official" style="color: #3b5998;"></span>
+                  <span style="margin-left: 3px;">シェア</span>
+                </button>
+              </a>
+            </div>
+            <div class="uk-display-inline-block uk-hidden line-it-button" data-lang="ja" data-type="share-a" data-url="https://player.honey.works/"></div>
+          </div>
+        </aside>
+        <aside>
+          <h2>Amazon.co.jpへのリンク</h2>
+          <script id="amazon-list-template" type="text/x-handlebars-template">
+            <ul class="uk-grid uk-grid-small uk-margin" data-uk-grid-margin>
+              {{#each amazon}}
+              <li class="uk-width-1-2 uk-width-small-1-3 uk-width-medium-1-4 uk-width-large-1-5">
+                <a class="uk-panel uk-panel-box uk-panel-box-secondary uk-panel-hover" href="https://www.amazon.co.jp/dp/{{asin}}">
+                  <div class="uk-panel-badge uk-badge uk-text-truncate">{{join format separator="+"}}</div>
+                  <div class="uk-panel-teaser">
+                    <img src="https://images-na.ssl-images-amazon.com/images/P/{{asin}}.09._SCLZZZZZZZ_SS320_.jpg" alt="{{title}}">
+                  </div>
+                  <p class="uk-text-truncate">{{title}}</p>
+                </a>
+              </li>
+              {{/each}}
+            </ul>
+          </script>
+          <div id="amazon-list"></div>
+          <p class="uk-text-muted">※このサイトでは、アフィリエイト（成功報酬型広告）を利用していません。</p>
+        </aside>
+        <aside>
+          <h2>オフィシャルサイトへのリンク</h2>
+          <ul class="uk-grid uk-grid-small uk-margin uk-text-center" data-uk-grid-margin>
+            <li class="uk-width-medium-1-3">
+              <a class="uk-panel uk-panel-box uk-panel-box-secondary uk-panel-hover" href="http://honeyworks.jp/">
+                <h3 class="uk-panel-title">HoneyWorks</h3>
+                <p class="uk-text-muted">honeyworks.jp</p>
+              </a>
+            </li>
+            <li class="uk-width-medium-1-3">
+              <a class="uk-panel uk-panel-box uk-panel-box-secondary uk-panel-hover" href="http://www.chicoxxx.com/">
+                <h3 class="uk-panel-title">CHiCO with HoneyWorks</h3>
+                <p class="uk-text-muted">www.chicoxxx.com</p>
+              </a>
+            </li>
+            <li class="uk-width-medium-1-3">
+              <a class="uk-panel uk-panel-box uk-panel-box-secondary uk-panel-hover" href="http://www.honeyworks-movie.jp/">
+                <h3 class="uk-panel-title">HoneyWorks アニメ</h3>
+                <p class="uk-text-muted">www.honeyworks-movie.jp</p>
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </main>
+      <footer>
+        <div class="uk-margin-large uk-text-center">
+          <a class="uk-display-inline-block" href="#top" title="┗|∵|┓ページトップへ戻る┗|∵|┓" data-uk-tooltip>
+            <img src="https://twemoji.maxcdn.com/svg/1f3a7.svg" width="48" height="48" alt="HoneyWorks Player">
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
