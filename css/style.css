@@ -70,6 +70,14 @@ main > * {
   max-width: none;
 }
 
+.site-title a {
+  font-family: ribeye, ribeye-marrow, serif;
+}
+
+.site-title a:hover {
+  font-family: ribeye-marrow, ribeye, serif;
+}
+
 #loading {
   background: #fff;
   bottom: 0;
