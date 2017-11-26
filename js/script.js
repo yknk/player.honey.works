@@ -60,19 +60,35 @@
       }
     });
 
-    $('.fancybox').fancybox({
-      width: 1280,
-      height: 720,
-      autoCenter: true,
-      aspectRatio: true,
-      mouseWheel: false,
-      keys: {
-        play: null
-      },
-      helpers: {
-        media: true
+    onYouTubeIframeAPIReady = function() {
+      $('.fancybox').fancybox({
+        width: 1280,
+        height: 720,
+        autoCenter: true,
+        aspectRatio: true,
+        mouseWheel: false,
+        keys: {
+          play: null
+        },
+        helpers: {
+          media: true
+        },
+        beforeShow: function() {
+          var id = $.fancybox.inner.find('iframe').attr('id');
+          var player = new YT.Player(id, {
+            events: {
+              'onStateChange': onPlayerStateChange
+            }
+          });
+        }
+      });
+    };
+
+    function onPlayerStateChange(event) {
+      if (event.data === 0) {
+        $.fancybox.close();
       }
-    });
+    }
 
     $(window).on('load', function() {
       $('#loading').delay(1000).fadeOut();
