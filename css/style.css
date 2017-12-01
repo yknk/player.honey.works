@@ -70,10 +70,12 @@ main > * {
   max-width: none;
 }
 
+.site-title,
 .site-title a {
   font-family: ribeye, ribeye-marrow, serif;
 }
 
+.site-title:hover,
 .site-title a:hover {
   font-family: ribeye-marrow, ribeye, serif;
 }
