@@ -61,7 +61,7 @@
     });
 
     onYouTubeIframeAPIReady = function() {
-      $('.fancybox').fancybox({
+      $('.fancybox-youtube').fancybox({
         width: 1280,
         height: 720,
         autoCenter: true,
