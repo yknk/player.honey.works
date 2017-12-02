@@ -60,6 +60,17 @@
       }
     });
 
+    $('.fancybox').fancybox({
+      width: 640,
+      height: 360,
+      autoCenter: true,
+      aspectRatio: true,
+      mouseWheel: false,
+      keys: {
+        play: null
+      }
+    });
+
     onYouTubeIframeAPIReady = function() {
       $('.fancybox-youtube').fancybox({
         width: 1280,
