@@ -62,7 +62,7 @@
 
     $('.fancybox').fancybox({
       width: 640,
-      height: 360,
+      height: 640,
       autoCenter: true,
       aspectRatio: true,
       mouseWheel: false,
