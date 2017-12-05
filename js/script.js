@@ -128,7 +128,7 @@
     if (!navigator.doNotTrack) {
       fbAsyncInit = function() {
         FB.init({
-          version: 'v2.10',
+          version: 'v2.11',
           xfbml: true
         });
       };
