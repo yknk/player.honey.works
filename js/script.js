@@ -135,9 +135,9 @@
     }
 
     if (!navigator.doNotTrack) {
-      $('body').append('<script src="https://platform.twitter.com/widgets.js"></script>');
-      $('body').append('<script src="https://connect.facebook.net/ja_JP/sdk.js"></script>');
-      $('body').append('<script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js"></script>');
+      $.getScript('https://platform.twitter.com/widgets.js');
+      $.getScript('https://connect.facebook.net/ja_JP/sdk.js');
+      $.getScript('https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js');
     }
   });
 })(jQuery);
