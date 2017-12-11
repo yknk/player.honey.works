@@ -129,6 +129,7 @@
       $.getScript('https://platform.twitter.com/widgets.js');
       $.getScript('https://connect.facebook.net/ja_JP/sdk.js');
       $.getScript('https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js');
+      $.getScript('https://www.googletagmanager.com/gtag/js?id=UA-110779746-1');
     }
 
     if (!navigator.doNotTrack) {
@@ -138,6 +139,17 @@
           xfbml: true
         });
       };
+    }
+
+    if (!navigator.doNotTrack) {
+      dataLayer = dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-110779746-1', {
+        'anonymize_ip': true
+      });
     }
   });
 })(jQuery);
