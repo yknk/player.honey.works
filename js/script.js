@@ -126,18 +126,18 @@
     }
 
     if (!navigator.doNotTrack) {
+      $.getScript('https://platform.twitter.com/widgets.js');
+      $.getScript('https://connect.facebook.net/ja_JP/sdk.js');
+      $.getScript('https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js');
+    }
+
+    if (!navigator.doNotTrack) {
       fbAsyncInit = function() {
         FB.init({
           version: 'v2.11',
           xfbml: true
         });
       };
-    }
-
-    if (!navigator.doNotTrack) {
-      $.getScript('https://platform.twitter.com/widgets.js');
-      $.getScript('https://connect.facebook.net/ja_JP/sdk.js');
-      $.getScript('https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js');
     }
   });
 })(jQuery);
