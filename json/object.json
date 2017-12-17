@@ -1,6 +1,13 @@
 {
   "amazon": [
     {
+      "asin": "B0788M5QB7",
+      "format": [
+        "CD"
+      ],
+      "title": "チョコカノ／ホワイトデーキッス"
+    },
+    {
       "asin": "B0764R2RX3",
       "format": [
         "CD"
@@ -13,13 +20,6 @@
         "CD"
       ],
       "title": "東京ウインターセッション"
-    },
-    {
-      "asin": "B074MB22JF",
-      "format": [
-        "CD"
-      ],
-      "title": "ジャッジ☆／月の姫"
     },
     {
       "asin": "B06XQ4SFML",
