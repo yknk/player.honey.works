@@ -143,9 +143,9 @@
 
     if (!navigator.doNotTrack) {
       dataLayer = dataLayer || [];
-      function gtag() {
+      gtag = function() {
         dataLayer.push(arguments);
-      }
+      };
       gtag('js', new Date());
       gtag('config', 'UA-110779746-1', {
         'anonymize_ip': true
