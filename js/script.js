@@ -142,7 +142,7 @@
     }
 
     if (!navigator.doNotTrack) {
-      dataLayer = dataLayer || [];
+      dataLayer = window.dataLayer || [];
       gtag = function() {
         dataLayer.push(arguments);
       };
