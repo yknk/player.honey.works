@@ -1,6 +1,13 @@
 {
   "amazon": [
     {
+      "asin": "B077VB1RZ9",
+      "format": [
+        "CD"
+      ],
+      "title": "ノスタルジックレインフォール"
+    },
+    {
       "asin": "B0788M5QB7",
       "format": [
         "CD"
@@ -22,20 +29,11 @@
       "title": "東京ウインターセッション"
     },
     {
-      "asin": "B06XQ4SFML",
+      "asin": "B074MB22JF",
       "format": [
-        "Blu-ray",
         "CD"
       ],
-      "title": "好きになるその瞬間を。～告白実行委員会～"
-    },
-    {
-      "asin": "B06XQ2F3ZP",
-      "format": [
-        "DVD",
-        "CD"
-      ],
-      "title": "好きになるその瞬間を。～告白実行委員会～"
+      "title": "ジャッジ☆／月の姫"
     }
   ],
   "youtube": [
