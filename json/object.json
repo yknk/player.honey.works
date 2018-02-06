@@ -1,11 +1,20 @@
 {
   "amazon": [
     {
-      "asin": "B077VB1RZ9",
+      "asin": "B079F9HWPP",
+      "format": [
+        "CD",
+        "DVD",
+        "ライトノベル"
+      ],
+      "title": "私を染めるiの歌"
+    },
+    {
+      "asin": "B079FLMY5H",
       "format": [
         "CD"
       ],
-      "title": "ノスタルジックレインフォール"
+      "title": "私を染めるiの歌"
     },
     {
       "asin": "B0788M5QB7",
@@ -27,13 +36,6 @@
         "CD"
       ],
       "title": "東京ウインターセッション"
-    },
-    {
-      "asin": "B074MB22JF",
-      "format": [
-        "CD"
-      ],
-      "title": "ジャッジ☆／月の姫"
     }
   ],
   "youtube": [
