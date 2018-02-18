@@ -123,6 +123,10 @@
       $('body').css('cursor', 'pointer');
     }
 
+    if (navigator.doNotTrack) {
+      $('.about-google-analytics').css('text-decoration', 'line-through');
+    }
+
     if (!navigator.doNotTrack) {
       $.getScript('https://platform.twitter.com/widgets.js');
       $.getScript('https://connect.facebook.net/ja_JP/sdk.js');
