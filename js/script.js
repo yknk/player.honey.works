@@ -125,6 +125,7 @@
 
     if (navigator.doNotTrack) {
       $('.about-google-analytics').css('text-decoration', 'line-through');
+      $('.about-do-not-track').css('display', 'initial');
     }
 
     if (!navigator.doNotTrack) {

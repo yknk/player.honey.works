@@ -137,6 +137,10 @@ main > * {
   }
 }
 
+.about-do-not-track {
+  display: none;
+}
+
 .fb_iframe_widget span {
   vertical-align: middle !important;
 }
